@@ -24,8 +24,8 @@ const kumbhSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Major House",
-  description: "Coming Soon - Major House",
+  title: "House Major",
+  description: "Coming Soon - House Major",
 };
 
 export default function RootLayout({
