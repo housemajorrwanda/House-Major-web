@@ -1,14 +1,85 @@
 @import "tailwindcss";
 
+/* Kumbh Sans Font Family */
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("/assets/fonts/KumbhSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("/assets/fonts/KumbhSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("/assets/fonts/KumbhSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Montserrat Font Family */
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Font Variables */
+  --font-kumbh-sans: "Kumbh Sans", system-ui, sans-serif;
+  --font-montserrat: "Montserrat", system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --color1: #7c3aed; /* violet-600 */
+    --color2: #c084fc; /* purple-400 */
   }
 }
 
@@ -16,6 +87,36 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-kumbh-sans), system-ui, sans-serif;
+}
+
+/* Custom Utility Classes for Fonts */
+.font-kumbh {
+  font-family: var(--font-kumbh-sans);
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+
+/* Font Weight Utilities */
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 /* Custom animations */
@@ -31,7 +132,8 @@ body {
 }
 
 @keyframes fade-in-delay {
-  0%, 50% {
+  0%,
+  50% {
     opacity: 0;
     transform: translateY(20px);
   }

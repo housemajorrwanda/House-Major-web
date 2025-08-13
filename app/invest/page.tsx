@@ -1,5 +1,5 @@
 import React from "react";
 
-export const Invest = () => {
+export default function Invest() {
   return <div>Invest</div>;
-};
+}
