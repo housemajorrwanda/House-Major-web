@@ -8,17 +8,20 @@ interface NavigationLinkProps {
   onClick?: () => void;
 }
 
-export const NavigationLink = ({ 
-  href, 
-  children, 
+export const NavigationLink = ({
+  href,
+  children,
   className = "",
-  onClick 
+  onClick,
 }: NavigationLinkProps) => {
+  const baseClasses =
+    "font-montserrat font-medium text-xs sm:text-sm md:text-base lg:text-sm xl:text-base 2xl:text-lg transition-colors duration-200 whitespace-nowrap text-black hover:text-blue-600 hover:font-semibold";
+
   return (
     <Link
       href={href}
       onClick={onClick}
-      className={`font-montserrat font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200 ${className}`}
+      className={`${baseClasses} ${className}`}
     >
       {children}
     </Link>
