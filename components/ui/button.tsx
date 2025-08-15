@@ -45,7 +45,7 @@ export const Button: React.FC<ButtonProps> = ({
       <div className="absolute inset-0 bg-blue-700 transform -translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out delay-75"></div>
 
       {/* Button content */}
-      <span className="relative z-10 flex items-center gap-2 whitespace-nowrap">
+      <span className="relative z-10 flex items-center gap-2 whitespace-nowrap font-medium">
         {children}
         {showArrow && (
           <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 transform group-hover:translate-x-1 transition-transform duration-300" />

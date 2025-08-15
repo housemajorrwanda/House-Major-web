@@ -11,7 +11,7 @@ export const Header = () => {
       className="w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50 overflow-hidden"
       role="banner"
     >
-      <div className="relative h-16 sm:h-20 md:h-24 lg:h-28">
+      <div className="relative h-16 sm:h-20 md:h-22 lg:h-24">
         {/* Full-height gradient background extending to left edge */}
         <div className="absolute left-0 top-0 h-full bg-blue-900 w-48 sm:w-56 md:w-72 lg:w-80 xl:w-96 [clip-path:polygon(0_0,_100%_0,_75%_100%,_0%_100%)] sm:[clip-path:polygon(0_0,_100%_0,_80%_100%,_0%_100%)] md:[clip-path:polygon(0_0,_100%_0,_85%_100%,_0%_100%)] lg:[clip-path:polygon(0_0,_100%_0,_87%_100%,_0%_100%)] xl:[clip-path:polygon(0_0,_100%_0,_90%_100%,_0%_100%)]"></div>
 
